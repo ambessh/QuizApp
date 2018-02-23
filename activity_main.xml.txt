@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ladoo.quizapp.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:hint="Name"
+        style="@style/newStyle"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:id="@+id/name_field"
+        />
+    <TextView
+       style="@style/newStyle"
+        android:text="Quiz!"
+      />
+    <TextView
+       android:text="what is the height of Eifeel Tower?"
+        style="@style/newStyle"
+        />
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobuttonone"
+           style="@style/newStyle"
+            android:text="324m"
+            />
+        <RadioButton
+            android:id="@+id/radiobuttontwo"
+            android:text="524m"
+            style="@style/newStyle"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/newid"
+       android:text="0"
+        style="@style/newStyle"
+        />
+    <Button
+       style="@style/newStyle"
+        android:text="Score"
+        android:onClick="done"
+        />
+</LinearLayout>
